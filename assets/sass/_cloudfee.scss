@@ -1,0 +1,74 @@
+.cloudfee {
+    padding: 48px 0 45px 0;
+    background: url('../img/cloudefee.png') top center / cover no-repeat;
+
+    &__title {
+        font-size: 96px;
+        color: $CloudfeeColor;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 8px;
+        font-family: "baron" ;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 49%;
+        flex: 0 0 49%;
+
+        &--right {
+            order: 2;
+        }
+    }
+
+    &__info {
+        width: 49%;
+        flex: 0 0 49%;
+        
+        &-subtitle {
+            font-size: 24px;
+            color: $CloudfeeColor;
+            font-family: "baron";
+        }
+
+        &-heading {
+            color: $CloudfeeColor;
+            font-size: 80px;
+            margin: 0 0 16px 0;
+        }
+
+        &-des {
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 16px;
+        }
+
+        &-link {
+            font-size: 16px;
+            display: block;
+            background-color: $PrimaryColor;
+            max-width: 282px;
+            text-align: center;
+            border-radius: 8px;
+            line-height: 40px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
+
+.text-container {
+    max-width: 824px;
+    margin: auto;
+    padding: 0 16px 32px;
+}

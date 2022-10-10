@@ -1,0 +1,100 @@
+.header {
+    &__topbar {
+        height: $HeaderHeight;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    &__topbar-link {
+        @include ResetaTag;
+        font-size: 1.2rem;
+
+    }
+
+    &__topbar-icon {
+        font-size: 1.6rem;
+        color: $PrimaryColor;
+    }
+
+    &__topbar-descript {
+        color: #00000099;
+        &:hover {
+            color: $PrimaryColor;
+        }
+    }
+}
+
+.header__navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    &-link {
+        display: block;
+    }
+
+    &-logo {
+        height: 15.5px;
+        width: 200px;
+    }
+
+    &-wrap {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 99;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.navbar-menu {
+    display: flex;
+
+    &__list {
+        margin-left: 75px;
+    }
+
+    &__items {
+        padding: 19px 10px 19px;
+        display: inline-block;
+    }
+
+    &__link {
+        @include ResetaTag;
+        font-size: 1.4rem;
+        color: $TextColor;
+        font-weight: 700;
+    }
+
+    &__link:hover {
+        color: $PrimaryColor;
+    }
+
+    &__icon {
+        font-size: 1rem;
+    }
+
+    &__child {
+        position: absolute;
+        @include FlexCenter;
+        list-style-type: none;
+        display: none;
+        
+    }
+
+    &__lv2-item {
+        flex: 1;
+        padding: 12px 24px;
+    }
+
+    &__child-link {
+        display: block;
+        @include ResetaTag;
+        font-size: 1.6rem;
+        border-bottom: 2px solid $TextColor;
+    }
+}

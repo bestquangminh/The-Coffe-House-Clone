@@ -1,0 +1,74 @@
+.branch {
+    width: 100%;
+    height: 556px;
+    padding: 44px 0 52px 0;
+    background-color: #fff;
+    
+    &__info {
+        padding-left: 100px;
+    }
+
+    &__name {
+        font-size: 28px;
+        line-height: 1.4;
+        font-weight: 600;
+        color: $TextColor;
+        max-width: 75%;
+    }
+
+    &__text {
+        font-size: 16px;
+        color: $TextColor;
+        opacity: 0.8;
+        max-width: 75%;
+        max-height: 115px;
+        line-height: 24px;
+        overflow: hidden;
+        margin-bottom: 16px;
+    }
+
+    &__button-cotainer{
+        width: 280px;
+    }
+
+    &__button {
+        width: 100%;
+        border: 0;
+        padding: 9px 25px;
+        border-radius: 8px;
+        background-color: $PrimaryColor;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;  
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 18px;
+        width: 60px;
+
+        &-icon {
+            color: #555;
+        }
+    }
+
+    &__img { 
+        &-container {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.branch__pagination-icon--disabled {
+    opacity: 0.3;
+    cursor: default;
+}

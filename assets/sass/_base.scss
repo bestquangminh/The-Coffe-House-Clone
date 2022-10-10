@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.has-child {
+    position: relative;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+.mr-14px {
+    margin-right: 14px;
+}
+
+$PrimaryColor: #EA8025;
+$TextColor: #000;
+$CloudfeeColor: #7D5230;
+$StoryColor: #fff7e6;
+$HeaderHeight: 42px;
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin  ResetaTag {
+    text-decoration: none;
+    color: $TextColor;
+}
+
+@mixin BtnHoverable {
+    color: $PrimaryColor;
+}
+
+@mixin BlogHeader {
+    font-size: 24px;
+    font-weight: 600;
+    color: $TextColor;
+}
+
+@font-face {
+    font-family: 'baron';
+    src: url(BaronNeueItalic.otf) format("opentype");
+}

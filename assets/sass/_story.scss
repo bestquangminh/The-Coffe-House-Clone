@@ -1,0 +1,99 @@
+.story {
+    background-color: $StoryColor;
+    padding-bottom: 11%;
+
+    &__header {
+        text-align: center;
+        padding-top: 40px;
+        span {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+}
+
+.blog {
+
+    &__link {
+        display: block;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &__link::before {
+        content: '';
+        display: block;
+        padding-top: 48%;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; 
+        height: 100%;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+    &__header-link {
+        @include ResetaTag;
+        display: inline-block;
+    }
+
+    &__header-text {
+        @include BlogHeader;
+        margin: 24px 0;
+        line-height: 1.4;
+        padding-left: 12px;
+        border-left: 4px solid $PrimaryColor;
+
+        &:hover {
+            @include BtnHoverable;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+        margin: 12px 0;
+        color: #00000099;
+    }
+
+    &__title {
+        @include BlogHeader;
+        font-size: 18px;
+        line-height: 1.4;
+        height: 26px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        margin-bottom: 8px;
+
+        &-link {
+            @include ResetaTag;
+            &:hover {
+                @include BtnHoverable;
+            }
+        }
+    }
+
+    &__desript {
+        font-size: 14px;
+        line-height: 24px;
+        max-height: 72px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}

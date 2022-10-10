@@ -1,0 +1,10 @@
+.slider {
+    transform: translateY(-60px);
+    &__link {
+        display: block;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
